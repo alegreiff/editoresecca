@@ -1,0 +1,10 @@
+.ecca-home-entrecortes {
+  background: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+
+  & img.ecca_entrecortes_img {
+    min-width: 100%;
+  }
+}
