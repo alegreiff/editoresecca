@@ -40,9 +40,10 @@ function maguared_loop_general($args, $claseprincipal)
 function maguared_loop_estructura($args)
 {
     //Se define la categoría para mostrar en HOME y la clase que generará el color
-    $categoria_principal = principaal();
-    $clase = get_category($categoria_principal[2]);
-    $clase = $clase->slug;
+    //$categoria_principal = principaal();
+    //$clase = get_category($categoria_principal[2]);
+    //$clase = $clase->slug;
+    $clase = '';
     $fecha = ucfirst(get_the_date('F j \d\e Y'));
 
     ?>
@@ -73,5 +74,5 @@ function maguared_loop_estructura($args)
 <?php
 
 }
-//DIANA VILLOTA
+
 genesis();
