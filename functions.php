@@ -267,9 +267,12 @@ function crear_un_cpt_asociados()
 {
 	$args = array(
 		'public' => true,
-		'label' => 'Asociados',
+		'labels' => array(
+			'name' => __('Asociados'),
+			'singular_name' => __('Asociado')
+		),
 		'show_in_rest' => true,
-		'has_archive' => true
+		'has_archive' => 'asociados'
 	);
 	register_post_type('asociado', $args);
 }
