@@ -1713,6 +1713,23 @@ img.alignright,
   min-width: 100%;
 }
 
+.asociados {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 15px;
+}
+
+.asociados img {
+  border-radius: 50%;
+  border: 4px grey solid;
+  display: block;
+}
+
+.asociados span.tipo {
+  display: block;
+  font-size: 0.8em;
+}
+
 @media only screen and (min-width: 960px) {
   .site-inner {
     max-width: 1140px;

@@ -272,15 +272,21 @@ function crear_un_cpt_asociados()
 			'singular_name' => __('Asociado')
 		),
 		'show_in_rest' => true,
-		'has_archive' => 'asociados'
+		'has_archive' => 'asociados',
+		'supports' => array('title', 'editor', 'custom-fields', ' thumbnail'),
+
 	);
 	register_post_type('asociado', $args);
 }
 
 // Adds image sizes.
 add_image_size('ecca_entrecortes', 400, 167, true);
+add_image_size('ecca_asociadomini', 150, 150, true);
 
 /*
 Administrador
 E-378_H$1-0n7*2
 */
+
+//add_theme_support('post-thumbnails');
+//add_post_type_support('asociado', 'thumbnail'); 
