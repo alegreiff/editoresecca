@@ -220,11 +220,17 @@ function nombresapellidos()
 function imagensocio()
 {
     $image = get_field('asociado_foto');
+    if (get_field('asociado_foto')) {
+        $image = get_field('asociado_foto');
+    } else
+        $image = 140;
     $size = 'ecca_asociadomini'; // (thumbnail, medium, large, full or custom size)
+
 
     if ($image) {
 
         echo wp_get_attachment_image($image, $size);
+        //echo $image;
     }
 }
 
