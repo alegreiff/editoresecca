@@ -57,7 +57,7 @@ function ecca_loop($args)
     $fields = get_field('cortes_asociados');
     if (is_array($fields)) {
 
-        d($fields);
+        //d($fields);
     }
 
 
