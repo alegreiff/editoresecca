@@ -219,18 +219,27 @@ function nombresapellidos()
 
 function imagensocio()
 {
+    $uploads = wp_upload_dir();
+    $rm_image_id = attachment_url_to_postid($uploads['baseurl'] . '/2019/04/nofoto.png');
+    //$rm_image_id = attachment_url_to_postid('http://ecca.co/wp-content/uploads/2019/04/nofoto.png');
+    //echo $rm_image_id;
     $image = get_field('asociado_foto');
     if (get_field('asociado_foto')) {
         $image = get_field('asociado_foto');
     } else
-        $image = 140;
+        $image = $rm_image_id;
     $size = 'ecca_asociadomini'; // (thumbnail, medium, large, full or custom size)
 
 
     if ($image) {
 
         echo wp_get_attachment_image($image, $size);
+        //echo ruta_subidas() . '2019/04/nofoto.png';
         //echo $image;
+        //echo $rm_image_id;
+
+
+        //echo ruta_subidas();
     }
 }
 
@@ -260,6 +269,12 @@ function tiene_entrecortes($id)
 <?php endif;
 }
 
+function ruta_subidas()
+{
+    $upload_dir = wp_upload_dir();
+    return trailingslashit($upload_dir['basedir']);
+}
+
 add_action('genesis_loop', 'be_custom_loop');
 add_action('genesis_loop', 'lista_socios_activos');
 add_action('genesis_loop', 'lista_socios_adherentes');
@@ -269,5 +284,7 @@ add_action('genesis_loop', 'lista_socios_adherentes');
 remove_action('genesis_loop', 'genesis_do_loop');
 remove_action('genesis_entry_header', 'genesis_do_post_title');
 remove_action('genesis_entry_header', 'genesis_post_info', 12);
+
+
 
 genesis();
