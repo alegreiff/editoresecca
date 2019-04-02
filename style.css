@@ -1730,6 +1730,10 @@ img.alignright,
   font-size: 0.8em;
 }
 
+.wp-custom-logo {
+  padding: 1em !important;
+}
+
 @media only screen and (min-width: 960px) {
   .site-inner {
     max-width: 1140px;
