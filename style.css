@@ -1734,6 +1734,19 @@ img.alignright,
   font-size: 0.8em;
 }
 
+div.asociado_single {
+  display: grid;
+  background: lime;
+}
+
+div.asociado_single span.apellido {
+  display: inline-block;
+}
+
+div.asociado_single span.apellido::first-letter {
+  font-weight: 900;
+}
+
 *,
 html {
   font-family: "Antic", sans-serif;

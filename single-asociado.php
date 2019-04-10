@@ -1,52 +1,58 @@
 <?php
 
 $campos = get_fields();
-/* print_r("<pre>");
-print_r($campos);
-print_r("</pre>"); */
 
 
-
-
-function be_custom_loop()
+function imagensocio()
 {
-    $post = get_post();
-    do_action('genesis_before_entry');
-    printf('<article %s>', genesis_attr('entry'));
+    $uploads = wp_upload_dir();
+    $rm_image_id = attachment_url_to_postid($uploads['baseurl'] . '/2019/04/nofoto.png');
+   
+    $image = get_field('asociado_foto');
+    if (get_field('asociado_foto')) {
+        $image = get_field('asociado_foto');
+    } else
+        $image = $rm_image_id;
+    $size = 'medium'; // (thumbnail, medium, large, full or custom size)
 
-    do_action('genesis_entry_header');
+
+    if ($image) {
+
+        echo wp_get_attachment_image($image, $size);
+    }
+}
+
+remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
+
+function asociado_single_view()
+{
+    global $campos;
+    $post = get_post();
+    echo '<div class="asociado_single">';
+    echo '<h2>'
+        .genesis_get_custom_field('asociado_nombres'). 
+        ' <span class="apellido">'
+        . genesis_get_custom_field('asociado_apellidos').
+        '</span>
+    <h2>';
+
     if (genesis_get_custom_field('asociado_cargoecca')) {
         echo '<h5>' . genesis_get_custom_field('asociado_cargoecca') . '</h5>';
+    }else{
+        echo '<p>nolas</p>';
     }
     echo '<span class="tipo">' . genesis_get_custom_field('asociado_tipo') . '</span>';
-
-
-
-    echo '<div class="">' . $post->post_content . '</div>';
-    //tiene_entrecortes(get_the_ID());
-
-
-    //nombresapellidos();
-    //$foto = genesis_get_custom_field('asociado_foto');
-    /* $foto = get_field('asociado_foto');
-            print_r("<pre>");
-            print_r($foto);
-            print_r("</pre>"); */
-    //imagensocio();
-
-    /*     do_action('genesis_before_entry_content');
-    printf('<div %s>', genesis_attr('entry-content'));
-    do_action('genesis_entry_content');
-    echo '</div>'; //** end .entry-content
-    do_action('genesis_after_entry_content'); */
-
+    imagensocio();
+    echo $post->post_content;
     do_action('genesis_entry_footer');
 
-    echo '</article>';
+    
+    echo '</div>';
 
     do_action('genesis_after_entry');
 }
 
 remove_action('genesis_loop', 'genesis_do_loop');
-add_action('genesis_loop', 'be_custom_loop');
+add_action('genesis_loop', 'asociado_single_view');
 genesis();
+ 

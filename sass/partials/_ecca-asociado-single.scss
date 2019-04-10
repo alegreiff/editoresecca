@@ -1,0 +1,10 @@
+div.asociado_single {
+  display: grid;
+  background: lime;
+  & span.apellido {
+    display: inline-block;
+  }
+  & span.apellido::first-letter {
+    font-weight: 900;
+  }
+}
