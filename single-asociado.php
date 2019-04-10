@@ -7,9 +7,10 @@ print_r("</pre>"); */
 
 
 
+
 function be_custom_loop()
 {
-
+    $post = get_post();
     do_action('genesis_before_entry');
     printf('<article %s>', genesis_attr('entry'));
 
@@ -19,8 +20,9 @@ function be_custom_loop()
     }
     echo '<span class="tipo">' . genesis_get_custom_field('asociado_tipo') . '</span>';
 
-    echo get_the_content();
 
+
+    echo '<div class="">' . $post->post_content . '</div>';
     //tiene_entrecortes(get_the_ID());
 
 
