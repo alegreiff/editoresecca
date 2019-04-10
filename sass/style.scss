@@ -84,6 +84,10 @@
 @import "partials/eccahome";
 @import "partials/ecca-asociados";
 
+*,
+html {
+  font-family: "Jura", sans-serif;
+}
 .content {
   @media only screen and (min-width: $standard-screen-width) {
     width: 75%;

@@ -1713,6 +1713,10 @@ img.alignright,
   min-width: 100%;
 }
 
+.ecca-home-entrecortes span.fecha {
+  color: lime;
+}
+
 .asociados {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1728,6 +1732,11 @@ img.alignright,
 .asociados span.tipo {
   display: block;
   font-size: 0.8em;
+}
+
+*,
+html {
+  font-family: "Jura", sans-serif;
 }
 
 .wp-custom-logo {

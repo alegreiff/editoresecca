@@ -291,3 +291,29 @@ E-378_H$1-0n7*2
 
 //add_theme_support('post-thumbnails');
 //add_post_type_support('asociado', 'thumbnail'); 
+
+//WEB ORIGIN
+//https://github.com/srikat/genesis-sample-task-runner
+
+
+// Agrega fuentes de Google Fonts
+// Enqueue the fonts
+    function add_fonts_to_theme(){
+        wp_enqueue_style("adding-google-fonts", all_google_fonts());
+     }
+     add_action("wp_enqueue_scripts","add_fonts_to_theme");
+
+    // Choose the fonts 
+    function all_google_fonts() {
+        $fonts = array(
+               "Open+Sans:400,700",
+               "Jura:400,700",
+               "Inconsolata:400,700"
+            );
+        $fonts_collection = add_query_arg(array(
+            "family"=>urlencode(implode("|",$fonts)),
+            "subset"=>"latin"
+            ),'https://fonts.googleapis.com/css');
+        return $fonts_collection;
+     }
+
