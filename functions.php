@@ -307,7 +307,7 @@ E-378_H$1-0n7*2
     function all_google_fonts() {
         $fonts = array(
                "Open+Sans:400,700",
-               "Jura:400,700",
+               "Antic:400,700",
                "Inconsolata:400,700"
             );
         $fonts_collection = add_query_arg(array(
