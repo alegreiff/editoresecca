@@ -13,12 +13,12 @@ function imagensocio()
         $image = get_field('asociado_foto');
     } else
         $image = $rm_image_id;
-    $size = 'medium'; // (thumbnail, medium, large, full or custom size)
+    $size = 'ecca_asociadomedium'; // (thumbnail, medium, large, full or custom size)
 
 
     if ($image) {
 
-        echo wp_get_attachment_image($image, $size);
+        echo wp_get_attachment_image($image, $size, array( "class" => "img-responsive" ));
     }
 }
 
@@ -34,16 +34,17 @@ function asociado_single_view()
         ' <span class="apellido">'
         . genesis_get_custom_field('asociado_apellidos').
         '</span>
-    <h2>';
+        </h2>';
 
-    if (genesis_get_custom_field('asociado_cargoecca')) {
-        echo '<h5>' . genesis_get_custom_field('asociado_cargoecca') . '</h5>';
-    }else{
-        echo '<p>nolas</p>';
+    echo '<h5>';
+        if (genesis_get_custom_field('asociado_cargoecca')) {
+        echo genesis_get_custom_field('asociado_cargoecca') .' ECCA';
     }
-    echo '<span class="tipo">' . genesis_get_custom_field('asociado_tipo') . '</span>';
+    echo '</h5>';
+    echo '<h5 class="tipo">' . genesis_get_custom_field('asociado_tipo') . '</h5>';
+
     imagensocio();
-    echo $post->post_content;
+    echo '<div class="asociado_bio">'.$post->post_content.'</div>';
     do_action('genesis_entry_footer');
 
     

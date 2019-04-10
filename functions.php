@@ -282,6 +282,7 @@ function crear_un_cpt_asociados()
 // Adds image sizes.
 add_image_size('ecca_entrecortes', 400, 167, true);
 add_image_size('ecca_asociadomini', 150, 150, true);
+add_image_size('ecca_asociadomedium', 400, 400, true);
 
 
 /*
