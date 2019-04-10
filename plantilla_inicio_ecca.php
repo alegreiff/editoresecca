@@ -67,7 +67,7 @@ function ecca_loop($args)
 
     ?>
 <article>
-    <span class="fecha"><?php echo $fecha; ?></span>
+    <span class="fecha">dd/mm<?php echo $fecha; ?></span>
     <div class="imagen"><?php echo the_post_thumbnail('ecca_entrecortes', array('class' => 'ecca_entrecortes_img', 'title' => get_the_title(), 'alt' => 'Imagen miniatura: ' . get_the_title())); ?></div>
     <h2 class="<?php echo 'MIKLASELOKA'; ?>"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 
