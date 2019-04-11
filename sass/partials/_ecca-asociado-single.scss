@@ -20,4 +20,8 @@ div.asociado_single {
     display: block;
     border-radius: 1em;
   }
+  & span.socio {
+    display: inline-block;
+    text-transform: lowercase;
+  }
 }

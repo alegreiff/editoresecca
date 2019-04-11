@@ -1762,6 +1762,11 @@ div.asociado_single img.size-ecca_asociadomedium {
   border-radius: 1em;
 }
 
+div.asociado_single span.socio {
+  display: inline-block;
+  text-transform: lowercase;
+}
+
 .wp-custom-logo {
   padding: 1em !important;
 }
