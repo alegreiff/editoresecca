@@ -66,7 +66,7 @@ function asociado_single_view()
         echo genesis_get_custom_field('asociado_cargoecca') .' ECCA';
     }
     echo '</h5>';
-    echo '<h5 class="tipo">Socio ' . genesis_get_custom_field('asociado_tipo') . ' ECCA</h5>';
+    echo '<h5 class="tipo"><i class="far fa-address-book"></i> ' . genesis_get_custom_field('asociado_tipo') . ' ECCA</h5>';
 
     imagensocio();
     echo '<div class="asociado_bio">'.$post->post_content.'</div>';

@@ -299,7 +299,16 @@ E-378_H$1-0n7*2
 
 // Agrega fuentes de Google Fonts
 // Enqueue the fonts
-    function add_fonts_to_theme(){
+	 function wpb_load_fa() {
+ 
+wp_enqueue_style( 'wpb-fa', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css' );
+ 
+}
+ 
+add_action( 'wp_enqueue_scripts', 'wpb_load_fa' );
+
+
+function add_fonts_to_theme(){
         wp_enqueue_style("adding-google-fonts", all_google_fonts());
      }
      add_action("wp_enqueue_scripts","add_fonts_to_theme");
@@ -307,7 +316,7 @@ E-378_H$1-0n7*2
     // Choose the fonts 
     function all_google_fonts() {
         $fonts = array(
-               "Open+Sans:400,700",
+               "Material+Icons",
                "Antic:400,700",
                "Inconsolata:400,700"
             );
@@ -317,4 +326,5 @@ E-378_H$1-0n7*2
             ),'https://fonts.googleapis.com/css');
         return $fonts_collection;
      }
+
 
