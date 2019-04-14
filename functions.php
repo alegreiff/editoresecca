@@ -328,3 +328,14 @@ function add_fonts_to_theme(){
      }
 
 
+
+
+function custom_single_template($the_template) {
+    foreach ( (array) get_the_category() as $cat ) {
+        if ( locate_template("single-{$cat->slug}.php") ) {
+            return locate_template("single-{$cat->slug}.php");
+        }
+    }
+    return $the_template;
+}
+add_filter( 'single_template', 'custom_single_template');

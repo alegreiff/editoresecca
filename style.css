@@ -1767,6 +1767,39 @@ div.asociado_single span.socio {
   text-transform: lowercase;
 }
 
+.entrada_entrecortes span.fecha {
+  display: inline-block;
+}
+
+.entrada_entrecortes span.fecha::first-letter {
+  text-transform: capitalize;
+}
+
+.entrada_entrecortes .asociados {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  /* background: crimson; */
+  justify-items: center;
+}
+
+.entrada_entrecortes .asociados div {
+  margin-top: 25px;
+  display: grid;
+  grid-template-rows: 1fr 5em;
+  align-items: center;
+  border: 2px grey solid;
+  padding: 0.2em 2em;
+  /* & img {
+        border: none;
+        border-radius: 0 !important;
+      } */
+}
+
+.entrada_entrecortes .asociados div a {
+  text-align: center;
+}
+
 .wp-custom-logo {
   padding: 1em !important;
 }

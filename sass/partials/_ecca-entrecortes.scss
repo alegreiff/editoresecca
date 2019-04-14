@@ -1,0 +1,33 @@
+.entrada_entrecortes {
+  & span.fecha {
+    display: inline-block;
+  }
+
+  & span.fecha::first-letter {
+    text-transform: capitalize;
+  }
+  & .asociados {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    /* background: crimson; */
+    justify-items: center;
+
+    & div {
+      margin-top: 25px;
+      display: grid;
+      grid-template-rows: 1fr 5em;
+      align-items: center;
+      border: 2px grey solid;
+      padding: 0.3em 2em;
+
+      /* & img {
+        border: none;
+        border-radius: 0 !important;
+      } */
+      & a {
+        text-align: center;
+      }
+    }
+  }
+}
