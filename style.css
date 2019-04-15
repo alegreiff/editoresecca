@@ -1718,7 +1718,7 @@ img.alignright,
 }
 
 .ecca-home-entrecortes article:first-child {
-  background: red;
+  margin: 0 4em;
   grid-column: 1 / 3;
 }
 
