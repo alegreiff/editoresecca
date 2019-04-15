@@ -21,7 +21,7 @@
     grid-template-rows: auto auto auto auto;
     & div.imagen {
       grid-column: 1;
-      grid-row: 2 / 4;
+      grid-row: 1 / 4;
 
       & img {
         object-fit: cover;
@@ -40,6 +40,14 @@
       & a {
         color: white;
       }
+    }
+    & span.fecha {
+      grid-row: 1;
+      grid-column: 1;
+      z-index: 1000;
+      font-size: 0.8em;
+      color: white;
+      padding: 0.2em;
     }
   }
 }
