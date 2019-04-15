@@ -1714,7 +1714,7 @@ img.alignright,
 }
 
 .ecca-home-entrecortes span.fecha {
-  color: lime;
+  color: #0073e5;
 }
 
 .asociados {
@@ -1789,7 +1789,7 @@ div.asociado_single span.socio {
   grid-template-rows: 1fr 5em;
   align-items: center;
   border: 2px grey solid;
-  padding: 0.2em 2em;
+  padding: 0.3em 2em;
   /* & img {
         border: none;
         border-radius: 0 !important;
@@ -1802,6 +1802,14 @@ div.asociado_single span.socio {
 
 .wp-custom-logo {
   padding: 1em !important;
+}
+
+a:hover,
+a:link,
+a:active,
+a:visited {
+  color: #0073e5;
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 960px) {
