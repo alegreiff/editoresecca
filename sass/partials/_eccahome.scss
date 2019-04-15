@@ -2,7 +2,7 @@
   background: white;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 10px;
+  grid-column-gap: 1em;
 
   & img.ecca_entrecortes_img {
     min-width: 100%;
@@ -10,5 +10,10 @@
 
   & span.fecha {
     color: $blue;
+  }
+
+  & article:first-child {
+    background: red;
+    grid-column: 1 / 3;
   }
 }

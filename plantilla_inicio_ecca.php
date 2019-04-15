@@ -53,7 +53,7 @@ function loop_entrecortes($args, $claseprincipal)
 function ecca_loop($args)
 {
     //Se define la categoría para mostrar en HOME y la clase que generará el color
-    $categoria_principal = 'KITKAT';
+    //$categoria_principal = 'KITKAT';
     $fields = get_field('cortes_asociados');
     if (is_array($fields)) {
 
