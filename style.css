@@ -2042,7 +2042,8 @@ a:visited {
     width: 75%;
   }
   .sidebar {
-    background: #4d1bc0;
+    background: #e5f2ff;
+    padding: 0.33em;
     width: 22%;
   }
   .site-inner {
