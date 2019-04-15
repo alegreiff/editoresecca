@@ -72,7 +72,11 @@ function ecca_loop($args)
     <h2 class="<?php echo 'titulo'; ?>"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 
     <div class="entrada"><?php the_excerpt(); ?></div>
-    <div><?php 
+    
+    <div class="homeentrecortes_socios"><?php 
+echo '<span class="categorias">';
+    the_category(' - ');
+    echo '</span>';
             if (is_array($fields)) {
                 foreach ($fields as $v) {
                     //echo "Valor actual de \$fields: $v.\n";
@@ -80,11 +84,7 @@ function ecca_loop($args)
                 }
             }
             ?></div>
-    <?php 
-    echo '<hr /> <div class="categorias">';
-    the_category(' - ');
-    echo '</div>';
-    ?>
+    
 </article>
 <?php
 

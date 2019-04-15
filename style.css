@@ -1721,6 +1721,22 @@ img.alignright,
   color: #0073e5;
 }
 
+.ecca-home-entrecortes article {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+}
+
+.ecca-home-entrecortes article div.imagen {
+  grid-column: 1;
+  grid-row: 2 / 4;
+}
+
+.ecca-home-entrecortes article h2.titulo {
+  background-color: rgba(4, 15, 22, 0.5);
+  grid-column: 1;
+  grid-row: 3;
+}
+
 .asociados {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
