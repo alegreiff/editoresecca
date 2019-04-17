@@ -54,6 +54,7 @@ function asociado_single_view()
     global $campos;
     $post = get_post();
     echo '<div class="asociado_single">';
+    echo do_shortcode('[social-icons]');
     echo '<h2>'
         .genesis_get_custom_field('asociado_nombres'). 
         ' <span class="apellido">'
@@ -80,5 +81,10 @@ function asociado_single_view()
 
 remove_action('genesis_loop', 'genesis_do_loop');
 add_action('genesis_loop', 'asociado_single_view');
+
+if ( function_exists( 'genesis_share_icon_output' ) ) {
+    global $Genesis_Simple_Share;
+    genesis_share_icon_output( 'aside' , $Genesis_Simple_Share->icons );//outputs social shares as defined in plugin
+} 
 genesis();
  

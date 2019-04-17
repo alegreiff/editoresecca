@@ -339,3 +339,40 @@ function custom_single_template($the_template) {
     return $the_template;
 }
 add_filter( 'single_template', 'custom_single_template');
+
+
+//FOOTER CUSTOM
+
+remove_action( 'genesis_footer', 'genesis_footer_markup_open', 5 );
+remove_action( 'genesis_footer', 'genesis_do_footer' );
+remove_action( 'genesis_footer', 'genesis_footer_markup_close', 15 );
+// Customize site footer
+add_action( 'genesis_footer', 'sp_custom_footer' );
+function sp_custom_footer() { ?>
+
+	<div class="site-footer"><div class="wrap">
+	<p>
+	<span>ECCA</span> - Editores Cinematográficos Colombianos Asociados
+	<i class="fas fa-play-circle"></i>
+	</p></div></div>
+
+<?php
+}
+
+// Adds a [social-icons] shortcode to output Genesis Simple Share icons in posts
+// https://wordpress.org/plugins/genesis-simple-share/
+// Add the code below to your active theme's functions.php file,
+// or use in a site-specific plugin.
+// The shortcode takes no attributes; change your icon settings via Genesis → Simple Share.
+add_shortcode( 'social-icons', 'gss_shortcode' );
+function gss_shortcode() {
+	global $Genesis_Simple_Share;
+	$icons = '';
+	
+	if ( function_exists( 'genesis_share_get_icon_output' ) ) {
+		$location = uniqid( 'gss-shortcode-' );
+		$icons = genesis_share_get_icon_output( $location, $Genesis_Simple_Share->icons );
+	}
+	
+	return $icons;
+}

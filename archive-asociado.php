@@ -56,16 +56,18 @@ function be_custom_loop()
                 echo '<h5>' . genesis_get_custom_field('asociado_cargoecca') . '</h5>';
             }
             echo '<span class="tipo">' . genesis_get_custom_field('asociado_tipo') . '</span>';
-            tiene_entrecortes(get_the_ID());
+            
 
 
             nombresapellidos();
+            
             //$foto = genesis_get_custom_field('asociado_foto');
             /* $foto = get_field('asociado_foto');
             print_r("<pre>");
             print_r($foto);
             print_r("</pre>"); */
             imagensocio();
+            tiene_entrecortes(get_the_ID());
 
             /* do_action('genesis_before_entry_content');
             printf('<div %s>', genesis_attr('entry-content'));
