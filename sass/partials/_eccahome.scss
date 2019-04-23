@@ -22,7 +22,7 @@
     padding: 0.5em;
     margin-bottom: 18px;
     display: grid;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto 40px;
     & div.imagen {
       grid-column: 1;
       grid-row: 1 / 4;

@@ -1726,7 +1726,7 @@ img.alignright,
   padding: 0.5em;
   margin-bottom: 18px;
   display: grid;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: auto auto auto 40px;
 }
 
 .ecca-home-entrecortes article div.imagen {
