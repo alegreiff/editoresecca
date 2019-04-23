@@ -24,9 +24,9 @@
     display: grid;
     grid-template-rows: auto auto auto auto;
     & div.homeentrecortes_socios {
-      background: lime;
+      background: crimson;
       grid-column: 1;
-      grid-row: 4;
+      grid-row: 5;
     }
     & div.imagen {
       grid-column: 1;

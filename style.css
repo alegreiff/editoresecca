@@ -1730,9 +1730,9 @@ img.alignright,
 }
 
 .ecca-home-entrecortes article div.homeentrecortes_socios {
-  background: lime;
+  background: crimson;
   grid-column: 1;
-  grid-row: 4;
+  grid-row: 5;
 }
 
 .ecca-home-entrecortes article div.imagen {
