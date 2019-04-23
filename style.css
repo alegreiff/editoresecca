@@ -1736,7 +1736,7 @@ img.alignright,
 
 .ecca-home-entrecortes article div.imagen {
   grid-column: 1;
-  grid-row: 1 / 4;
+  grid-row: 1 / 3;
 }
 
 .ecca-home-entrecortes article div.imagen img {
@@ -1749,7 +1749,7 @@ img.alignright,
 .ecca-home-entrecortes article h2.titulo {
   background-color: rgba(4, 15, 22, 0.6);
   grid-column: 1;
-  grid-row: 3;
+  grid-row: 2;
   padding: 0.2em;
   margin: 0;
 }
