@@ -1726,7 +1726,13 @@ img.alignright,
   padding: 0.5em;
   margin-bottom: 18px;
   display: grid;
-  grid-template-rows: auto auto auto 40px;
+  grid-template-rows: auto auto auto auto;
+}
+
+.ecca-home-entrecortes article div.homeentrecortes_socios {
+  background: lime;
+  grid-column: 1;
+  grid-row: 4;
 }
 
 .ecca-home-entrecortes article div.imagen {
