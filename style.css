@@ -1854,6 +1854,10 @@ a:visited {
   text-decoration: none;
 }
 
+.site-header {
+  margin-top: -20px;
+}
+
 @media only screen and (min-width: 960px) {
   .site-inner {
     max-width: 1140px;
