@@ -1759,6 +1759,10 @@ img.alignright,
   padding: 0.2em;
 }
 
+span.eccasociohome {
+  display: block;
+}
+
 .asociados {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

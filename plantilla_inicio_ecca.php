@@ -75,12 +75,14 @@ function ecca_loop($args)
     
     <div class="homeentrecortes_socios"><?php 
 echo '<span class="categorias">';
-    the_category(' - ');
+    //the_category(' - ');
     echo '</span>';
             if (is_array($fields)) {
+                $i = 0;
                 foreach ($fields as $v) {
-                    //echo "Valor actual de \$fields: $v.\n";
-                    echo '<span><a href="' . get_the_permalink($v) . '">' . get_the_title($v) . '</a></span> ';
+                    //echo "Valor actual de \$fields: $v.\n" . $i;
+                    echo '<span class="eccasociohome"><a href="' . get_the_permalink($v) . '">' . get_the_title($v) . '</a></span> ';
+                    $i++;
                 }
             }
             ?></div>
