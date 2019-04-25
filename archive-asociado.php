@@ -50,6 +50,7 @@ function be_custom_loop()
 
 
             printf('<article %s>', genesis_attr('entry'));
+            
 
             do_action('genesis_entry_header');
             if (genesis_get_custom_field('asociado_cargoecca')) {
@@ -215,8 +216,12 @@ function lista_socios_adherentes()
 
 function nombresapellidos()
 {
+    echo '<a href="'.get_the_permalink().'">';
     echo genesis_get_custom_field('asociado_nombres') . " ";
     echo genesis_get_custom_field('asociado_apellidos');
+    echo '</a>';
+
+
 }
 
 function imagensocio()
