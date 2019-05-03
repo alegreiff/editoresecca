@@ -283,6 +283,9 @@ function crear_un_cpt_asociados()
 add_image_size('ecca_entrecortes', 400, 167, true);
 add_image_size('ecca_asociadomini', 150, 150, true);
 add_image_size('ecca_asociadomedium', 400, 400, true);
+add_image_size('ecca_banner', 1600, 500, true);
+add_image_size('ecca_bannermedio', 800, 250, true);
+add_image_size('ecca_bannermini', 400, 125, true);
 
 
 /*
@@ -316,8 +319,8 @@ function add_fonts_to_theme(){
     // Choose the fonts 
     function all_google_fonts() {
         $fonts = array(
-               "Material+Icons",
-               "Antic:400,700",
+               "Archivo+Narrow",
+               "Oswald",
                "Inconsolata:400,700"
             );
         $fonts_collection = add_query_arg(array(
@@ -375,4 +378,22 @@ function gss_shortcode() {
 	}
 	
 	return $icons;
+}
+
+//SLIDER EN HOME
+/* if($_SERVER["REQUEST_URI"] == '/'){
+	add_action('wp_enqueue_scripts', 'carrusel_home');
+	
+
+} */
+add_action('wp_enqueue_scripts', 'carrusel_home');
+function carrusel_home() {
+    wp_register_script('carrusel', "//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js", array('jquery'), '1.0.0', true );
+    wp_enqueue_script( 'carrusel2', get_stylesheet_directory_uri() . '/js/carrusel_home.js', array('jquery'), '1.0.0', true );
+    //wp_enqueue_style( 'carrusel', '//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css' );
+	wp_enqueue_script('carrusel');
+	wp_enqueue_script('carrusel2');
+	
+
+
 }

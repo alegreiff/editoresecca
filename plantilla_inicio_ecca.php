@@ -5,12 +5,79 @@
 
  * @package ecca
  */
+$banner = get_field('eccahome_banner');
+if($banner == true){
+    add_action( 'genesis_before_content', 'bannerHome' );
+}
 
+function bannerHome() {
+    $banneres = get_field('eccahome_slider');
+    if(count($banneres) === 1){
+        $elemento = $banneres[0];
+        if($elemento['eccahome_tipourl']==='Interna'){
+                    $elenlace = esc_url( get_permalink($elemento['eccahome_interno']) );
+                    $target='_self';
+                    $title = get_the_title( $elemento['eccahome_interno'] );
+
+                }else{
+                    $elenlace = $elemento['eccahome_externa'];
+                    $target='_blank';
+                    $title = $elemento['eccahome_externa'];
+                }
+        
+
+        echo '<div class="ecca_carrusel_home">
+        <a href="'.$elenlace.'" target="'.$target.'"><img src="'.get_field("eccahome_slider")[0]["eccahome_imagen"].'" title="'.$title.'"></a>
+        </div>';
+    }else{
+        echo '<div class="ecca_carrusel_home ciclo">
+                <div class="slider">';
+
+            foreach($banneres as $elemento){
+                if($elemento['eccahome_tipourl']==='Interna'){
+                    $elenlace = esc_url( get_permalink($elemento['eccahome_interno']) );
+                    $target='_self';
+                    $title = get_the_title( $elemento['eccahome_interno'] );
+
+                }else{
+                    $elenlace = $elemento['eccahome_externa'];
+                    $target='_blank';
+                    $title = $elemento['eccahome_externa'];
+                }
+                //esc_url( get_permalink(10) );
+
+                    echo '<div>
+                            <a href="'.$elenlace.'" target="'.$target.'">
+                                <img src="'.$elemento['eccahome_imagen'].'" title="'.$title.'">
+                            </a>
+
+
+                    </div>';
+                }
+        echo '</div></div>';
+    }
+
+    
+    /* print_r("<pre>");
+    print_r(get_fields());
+    print_r("</pre>");  */ 
+}
+
+
+
+/* d(get_fields());
+ 
+ d($banner); */
+//echo $banner;
 remove_action('genesis_loop', 'genesis_do_loop');
 add_action('genesis_loop', 'child_grid_loop_helper');
 add_action('genesis_loop', 'ecca_noticias_home');
 function child_grid_loop_helper()
 {
+    /* global $banner;
+    echo '<hr />INICIO';
+    
+    echo 'FIN<hr />'; */
     wp_reset_query();
     $args = array(
         'category_name' => 'entre-cortes',
@@ -21,6 +88,8 @@ function child_grid_loop_helper()
 
 function ecca_noticias_home()
 {
+
+    
     wp_reset_query();
     $args = array(
         'category_name' => 'noticias',
@@ -59,6 +128,7 @@ function ecca_loop($args)
 
         //d($fields);
     }
+    
 
 
     //$clase = get_category($categoria_principal[2]);

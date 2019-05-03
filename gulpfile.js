@@ -211,7 +211,7 @@ gulp.task("watch", () => {
     /* host: siteName, */
     host: "192.168.1.100",
     open: "external",
-    port: 666 /* ,
+    port: 88 /* ,
 		https: {
 			key: `/Users/${userName}/.valet/Certificates/${siteName}.key`,
 			cert: `/Users/${userName}/.valet/Certificates/${siteName}.crt`

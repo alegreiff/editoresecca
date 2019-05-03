@@ -85,6 +85,7 @@
 @import "partials/ecca-asociados";
 @import "partials/ecca-asociado-single";
 @import "partials/ecca-entrecortes";
+@import "partials/bxslider";
 
 .content {
   @media only screen and (min-width: $standard-screen-width) {
@@ -97,15 +98,19 @@
     padding: 0.33em;
     width: 22%;
   }
+  @media only screen and (max-width: $standard-screen-width) {
+    display: none;
+  }
 }
 .site-inner {
   @media only screen and (min-width: $standard-screen-width) {
     max-width: 1300px;
+    margin-top: 145px !important;
   }
 }
 
 .wp-custom-logo {
-  padding: 1em !important;
+  /* padding: 1em !important; */
 }
 
 a:hover,
@@ -117,5 +122,43 @@ a:visited {
 }
 
 .site-header {
-  margin-top: -20px;
+  /* margin-top: -20px; */
+  margin: -20px 0 0 0;
+  padding: 1.5em 0 0 1em;
+  background: white;
+
+  & .wrap {
+    background: none;
+    z-index: 9999;
+  }
+}
+body {
+  background-image: url(images/fondo-b571bbea.png);
+  /* background-color: orangered; */
+}
+.slider {
+  & img {
+    min-width: 100%;
+    min-height: 100%;
+  }
+}
+
+.ciclo {
+  @media only screen and (max-width: $standard-screen-width) {
+    display: none;
+  }
+}
+
+/* *,
+p {
+  font-family: "Oswald", sans-serif;
+} */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* font-family: 'Oswald', sans-serif; */
+  /* font-family: "Archivo Narrow", sans-serif !important; */
 }
