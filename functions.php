@@ -73,7 +73,7 @@ function genesis_sample_enqueue_scripts_styles()
 
 	wp_enqueue_style(
 		'genesis-sample-fonts',
-		'//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700',
+		'//fonts.googleapis.com/css?family=Archivo+Narrow',
 		array(),
 		CHILD_THEME_VERSION
 	);
