@@ -319,7 +319,7 @@ function add_fonts_to_theme(){
     // Choose the fonts 
     function all_google_fonts() {
         $fonts = array(
-               "Archivo+Narrow",
+               "Pacifico",
                "Oswald",
                "Inconsolata:400,700"
             );
