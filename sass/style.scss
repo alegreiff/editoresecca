@@ -122,19 +122,23 @@ a:visited {
 }
 
 .site-header {
-  /* margin-top: -20px; */
   margin: -20px 0 0 0;
   padding: 1.5em 0 0 1em;
-  background: white;
+  background-image: url(images/channels4_banner.jpg);
 
   & .wrap {
     background: none;
     z-index: 9999;
   }
+
+  & .title-area {
+  }
 }
 body {
-  background-image: url(images/fondo-b571bbea.png);
-  /* background-color: orangered; */
+  background-image: url(images/dcea83db.png);
+}
+.site-inner {
+  background-color: rgb(231, 228, 228);
 }
 .slider {
   & img {

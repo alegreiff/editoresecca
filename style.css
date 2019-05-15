@@ -2080,10 +2080,9 @@ a:visited {
 }
 
 .site-header {
-  /* margin-top: -20px; */
   margin: -20px 0 0 0;
   padding: 1.5em 0 0 1em;
-  background: white;
+  background-image: url(images/channels4_banner.jpg);
 }
 
 .site-header .wrap {
@@ -2092,8 +2091,11 @@ a:visited {
 }
 
 body {
-  background-image: url(images/fondo-b571bbea.png);
-  /* background-color: orangered; */
+  background-image: url(images/dcea83db.png);
+}
+
+.site-inner {
+  background-color: #e7e4e4;
 }
 
 .slider img {
@@ -2429,6 +2431,9 @@ h6 {
   }
 }
 @media only screen and (max-width: 960px) {
+  .ecca-home-entrecortes {
+    grid-template-columns: 1fr;
+  }
   .sidebar {
     display: none;
   }
