@@ -2080,9 +2080,10 @@ a:visited {
 }
 
 .site-header {
-  margin: -20px 0 0 0;
+  margin: 0 auto;
   padding: 1.5em 0 0 1em;
   background-image: url(images/channels4_banner.jpg);
+  border-bottom: 4px crimson solid;
 }
 
 .site-header .wrap {
@@ -2092,10 +2093,6 @@ a:visited {
 
 body {
   background-image: url(images/dcea83db.png);
-}
-
-.site-inner {
-  background-color: #e7e4e4;
 }
 
 .slider img {
@@ -2116,6 +2113,29 @@ h6 {
   /* font-family: 'Oswald', sans-serif; */
   /* font-family: "Archivo Narrow", sans-serif !important; */
 }
+
+.content-sidebar-wrap {
+  margin-top: 2em;
+}
+
+/* MENU*/
+ul#menu-maineditores li {
+  padding: 1em;
+  background: white;
+}
+
+ul#menu-maineditores li a {
+  font-size: 1.19em;
+}
+
+ul#menu-maineditores li.current_page_item,
+ul#menu-maineditores li.current-menu-item {
+  padding: 1em;
+  background: crimson;
+}
+
+/* FIN MENU*/
+
 @media only screen and (min-width: 960px) {
   .site-inner {
     max-width: 1140px;
@@ -2313,6 +2333,7 @@ h6 {
     margin-top: 145px !important;
   }
 }
+
 @media print {
   *,
   *:before,
@@ -2430,6 +2451,7 @@ h6 {
     page-break-before: avoid;
   }
 }
+
 @media only screen and (max-width: 960px) {
   .ecca-home-entrecortes {
     grid-template-columns: 1fr;
@@ -2439,6 +2461,9 @@ h6 {
   }
   .ciclo {
     display: none;
+  }
+  .content-sidebar-wrap {
+    margin-top: 0;
   }
 }
 
