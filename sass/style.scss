@@ -117,7 +117,7 @@ a:hover,
 a:link,
 a:active,
 a:visited {
-  color: $blue;
+  color: $colorecca !important;
   text-decoration: none;
 }
 
@@ -176,7 +176,8 @@ h6 {
 /* MENU*/
 ul#menu-maineditores li {
   padding: 1em;
-  background: white;
+  background: rgb(196, 194, 194);
+  opacity: 0.8;
 
   & a {
     font-size: 1.19em;
@@ -186,6 +187,7 @@ ul#menu-maineditores li {
 ul#menu-maineditores li.current_page_item,
 ul#menu-maineditores li.current-menu-item {
   padding: 1em;
-  background: $colorecca;
+  background: white;
+  border-bottom: 0.5em $colorecca solid;
 }
 /* FIN MENU*/

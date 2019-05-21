@@ -210,7 +210,7 @@ gulp.task("watch", () => {
     proxy: `http://${siteName}`,
     /* host: siteName, */
     host: "192.168.1.100",
-    open: "external",
+    open: "false",
     port: 88 /* ,
 		https: {
 			key: `/Users/${userName}/.valet/Certificates/${siteName}.key`,
