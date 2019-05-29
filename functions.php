@@ -397,3 +397,9 @@ function carrusel_home() {
 
 
 }
+
+
+// remover SEO ajustes en POSTS
+
+remove_action('admin_menu', 'genesis_add_inpost_seo_box');
+
