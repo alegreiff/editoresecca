@@ -209,7 +209,7 @@ gulp.task("watch", () => {
   browserSync.init({
     proxy: `http://${siteName}`,
     /* host: siteName, */
-    host: "192.168.1.100",
+    host: "0.0.0.0",
     open: "false",
     port: 88 /* ,
 		https: {

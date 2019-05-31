@@ -2326,7 +2326,8 @@ ul#menu-maineditores li.current-menu-item {
     width: 75%;
   }
   .sidebar {
-    background: #e5f2ff;
+    /* background: lighten($blue, 50%); */
+    background: white;
     padding: 0.33em;
     width: 22%;
   }
