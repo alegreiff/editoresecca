@@ -2121,19 +2121,21 @@ h6 {
 /* MENU*/
 ul#menu-maineditores li {
   padding: 1em;
-  background: #c4c2c2;
-  opacity: 0.8;
+  text-transform: capitalize !important;
+  /* background: rgb(196, 194, 194);
+  opacity: 0.8; */
 }
 
 ul#menu-maineditores li a {
   font-size: 1.19em;
+  color: white !important;
 }
 
 ul#menu-maineditores li.current_page_item,
 ul#menu-maineditores li.current-menu-item {
   padding: 1em;
-  background: white;
-  border-bottom: 0.5em crimson solid;
+  /* background: white;
+  border-bottom: 0.5em $colorecca solid; */
 }
 
 /* FIN MENU*/
