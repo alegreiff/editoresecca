@@ -94,7 +94,8 @@
 }
 .sidebar {
   @media only screen and (min-width: $standard-screen-width) {
-    background: lighten($blue, 50%);
+    /* background: lighten($blue, 50%); */
+    background: white;
     padding: 0.33em;
     width: 22%;
   }
