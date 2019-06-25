@@ -1,6 +1,7 @@
 .ecca-home-noticias {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background: white;
   grid-column-gap: 1em;
   & img {
     min-width: 100%;
