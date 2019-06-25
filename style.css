@@ -1830,6 +1830,7 @@ span.eccasociohome {
   background: white;
   padding: 0.6em;
   display: grid;
+  border-radius: 0.41em;
 }
 
 .asociados article * {
