@@ -1708,6 +1708,9 @@ img.alignright,
 
 .ecca-home-noticias {
   background-color: lime;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1em;
 }
 
 .ecca-home-entrecortes {
