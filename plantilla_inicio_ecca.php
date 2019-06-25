@@ -70,8 +70,10 @@ function bannerHome() {
  d($banner); */
 //echo $banner;
 remove_action('genesis_loop', 'genesis_do_loop');
-add_action('genesis_loop', 'child_grid_loop_helper');
+
 add_action('genesis_loop', 'ecca_noticias_home');
+add_action('genesis_loop', 'child_grid_loop_helper');
+
 function child_grid_loop_helper()
 {
     /* global $banner;

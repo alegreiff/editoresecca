@@ -1706,6 +1706,10 @@ img.alignright,
 /* Print Styles
 --------------------------------------------------- */
 
+.ecca-home-noticias {
+  background-color: lime;
+}
+
 .ecca-home-entrecortes {
   background: white;
   display: grid;
@@ -1792,7 +1796,7 @@ span.eccasociohome {
 
 .asociados img {
   border-radius: 50%;
-  border: 4px grey solid;
+  border: 2px grey dashed;
   display: block;
 }
 
