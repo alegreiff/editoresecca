@@ -106,6 +106,10 @@ function loop_entrecortes($args, $claseprincipal)
     $wp_query = new WP_Query($args);
     if ($wp_query->have_posts()) :
         echo '<div class="' . $claseprincipal . '">';
+        if($claseprincipal === 'ecca-home-entrecortes'){
+            echo '<h4>Entre Cortes</h4>
+            <p class="describe_ec">Descripción breve y pendiente de envío que dirá qué son los EC`S</p>';
+        }
 
         while ($wp_query->have_posts()) : $wp_query->the_post();
             global $post;
