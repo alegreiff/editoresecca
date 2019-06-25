@@ -264,6 +264,7 @@ function tiene_entrecortes($id)
     ));
     if ($entrecortes) : ?>
 <ul>
+    <span>Entre Cortes</span>
     <?php foreach ($entrecortes as $doctor) : ?>
     <li>
         <a href="<?php echo get_permalink($doctor->ID); ?>">

@@ -1826,6 +1826,29 @@ span.eccasociohome {
   font-size: 0.8em;
 }
 
+.asociados article {
+  background: white;
+  padding: 0.6em;
+  display: grid;
+}
+
+.asociados article * {
+  grid-column: 1 / 3;
+}
+
+.asociados article ul {
+  grid-column: 3;
+}
+
+.asociados article ul span {
+  font-size: 0.8em;
+  font-weight: bolder;
+}
+
+.asociados footer {
+  display: none;
+}
+
 div.asociado_single {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
