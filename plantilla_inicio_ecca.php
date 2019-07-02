@@ -5,6 +5,7 @@
 
  * @package ecca
  */
+$entrecortes_describe = get_field('eccahome_describe_entrecortes');
 $banner = get_field('eccahome_banner');
 if($banner == true){
     add_action( 'genesis_before_content', 'bannerHome' );
@@ -102,6 +103,7 @@ function ecca_noticias_home()
 
 function loop_entrecortes($args, $claseprincipal)
 {
+ global $entrecortes_describe;
     global $wp_query;
     $wp_query = new WP_Query($args);
     if ($wp_query->have_posts()) :
@@ -109,7 +111,7 @@ function loop_entrecortes($args, $claseprincipal)
         if($claseprincipal === 'ecca-home-entrecortes'){
             echo '<h4>Entre Cortes</h4>
             <p class="describe_ec">
-            Entrevistas realizadas a editores miembros de la asociación, quienes hablan sobre el montaje del largometraje que editaron y está próximo a estrenarse.
+            '.$entrecortes_describe.'
             </p>';
         }
 
