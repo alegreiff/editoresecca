@@ -108,7 +108,9 @@ function loop_entrecortes($args, $claseprincipal)
         echo '<div class="' . $claseprincipal . '">';
         if($claseprincipal === 'ecca-home-entrecortes'){
             echo '<h4>Entre Cortes</h4>
-            <p class="describe_ec">Descripción breve y pendiente de envío que dirá qué son los EC`S</p>';
+            <p class="describe_ec">
+            Entrevistas realizadas a editores miembros de la asociación, quienes hablan sobre el montaje del largometraje que editaron y está próximo a estrenarse.
+            </p>';
         }
 
         while ($wp_query->have_posts()) : $wp_query->the_post();
