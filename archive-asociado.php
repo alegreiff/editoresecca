@@ -133,7 +133,7 @@ function lista_socios_activos()
 
             do_action('genesis_entry_header');
             echo '<span class="tipo">' . genesis_get_custom_field('asociado_tipo') . '</span>';
-            tiene_entrecortes(get_the_ID());
+            
             nombresapellidos();
             imagensocio();
             tiene_entrecortes(get_the_ID());
