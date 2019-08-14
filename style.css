@@ -2178,7 +2178,7 @@ ul#menu-maineditores li {
 }
 
 ul#menu-maineditores li a {
-  font-size: 1.19em;
+  font-size: 0.85em;
   color: white !important;
 }
 
@@ -2191,7 +2191,7 @@ ul#menu-maineditores li.current-menu-item {
 
 ul#menu-maineditores li.current-menu-item a {
   /* border-bottom: 5px $colorecca solid; */
-  border-bottom: 0.5em white solid;
+  border-bottom: 0.3em white solid;
 }
 
 /* FIN MENU*/
