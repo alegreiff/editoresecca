@@ -125,7 +125,10 @@ a:visited {
 .site-header {
   margin: 0 auto;
   padding: 1.5em 0 0 1em;
-  background-image: url(images/channels4_banner.jpg);
+  /* background-image: url(images/channels4_banner.jpg); */
+  background-image: url(images/crimson-pattern.png);
+
+  background-color: crimson;
 
   & .wrap {
     background: none;
