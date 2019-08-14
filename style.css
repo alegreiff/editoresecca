@@ -2190,7 +2190,8 @@ ul#menu-maineditores li.current-menu-item {
 }
 
 ul#menu-maineditores li.current-menu-item a {
-  border-bottom: 5px crimson solid;
+  /* border-bottom: 5px $colorecca solid; */
+  border-bottom: 0.5em white solid;
 }
 
 /* FIN MENU*/
