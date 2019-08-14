@@ -210,3 +210,14 @@ ul#menu-maineditores li.current-menu-item a {
   margin-right: 1em;
   text-align: center;
 }
+
+/*.site-header {
+  @media only screen and (max-width: $standard-screen-width) {
+    max-height: 100px;
+  }
+}*/
+.title-area a img {
+  @media only screen and (max-width: $standard-screen-width) {
+    max-height: 100px;
+  }
+}

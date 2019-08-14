@@ -2206,6 +2206,12 @@ ul#menu-maineditores li.current-menu-item a {
   text-align: center;
 }
 
+/*.site-header {
+  @media only screen and (max-width: $standard-screen-width) {
+    max-height: 100px;
+  }
+}*/
+
 @media only screen and (min-width: 960px) {
   .site-inner {
     max-width: 1140px;
@@ -2553,6 +2559,9 @@ ul#menu-maineditores li.current-menu-item a {
   }
   .content-sidebar-wrap {
     margin-top: 0;
+  }
+  .title-area a img {
+    max-height: 100px;
   }
 }
 
