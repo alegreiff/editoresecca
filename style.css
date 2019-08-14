@@ -2551,6 +2551,21 @@ ul#menu-maineditores li.current-menu-item a {
     padding: 0.4em;
     grid-column: 1;
   }
+  div.asociado_single {
+    grid-template-columns: 1fr;
+  }
+  div.asociado_single h2 {
+    grid-column: 1;
+  }
+  div.asociado_single div.asociado_bio {
+    padding: 1em;
+    grid-column: 1;
+  }
+  div.asociado_single img.size-ecca_asociadomedium {
+    margin: 0 auto;
+    display: block;
+    border-radius: 1em;
+  }
   .sidebar {
     display: none;
   }
