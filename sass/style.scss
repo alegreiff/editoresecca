@@ -201,3 +201,12 @@ ul#menu-maineditores li.current-menu-item a {
   border-bottom: 0.5em white solid;
 }
 /* FIN MENU*/
+.menu-toggle {
+  color: white;
+}
+#genesis-mobile-nav-primary::before {
+  content: "\f333";
+  font: normal 30px/1 "dashicons";
+  margin-right: 1em;
+  text-align: center;
+}
