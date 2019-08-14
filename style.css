@@ -2529,6 +2529,21 @@ ul#menu-maineditores li.current-menu-item a {
   }
   .ecca-home-entrecortes {
     grid-template-columns: 1fr;
+    grid-column-gap: 1em;
+  }
+  .ecca-home-entrecortes img.ecca_entrecortes_img {
+    min-width: 100%;
+  }
+  .ecca-home-entrecortes span.fecha {
+    color: #0073e5;
+  }
+  .ecca-home-entrecortes h4 {
+    padding: 0.4em;
+    grid-column: 1;
+  }
+  .ecca-home-entrecortes p.describe_ec {
+    padding: 0.4em;
+    grid-column: 1;
   }
   .sidebar {
     display: none;

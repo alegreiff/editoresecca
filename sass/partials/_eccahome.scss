@@ -85,6 +85,23 @@
 
   @media only screen and (max-width: $standard-screen-width) {
     grid-template-columns: 1fr;
+    grid-column-gap: 1em;
+
+    & img.ecca_entrecortes_img {
+      min-width: 100%;
+    }
+
+    & span.fecha {
+      color: $blue;
+    }
+    & h4 {
+      padding: 0.4em;
+      grid-column: 1;
+    }
+    & p.describe_ec {
+      padding: 0.4em;
+      grid-column: 1;
+    }
   }
 }
 span.eccasociohome {
