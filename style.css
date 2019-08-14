@@ -2551,6 +2551,9 @@ ul#menu-maineditores li.current-menu-item a {
     padding: 0.4em;
     grid-column: 1;
   }
+  .asociados {
+    grid-template-columns: 1fr;
+  }
   div.asociado_single {
     grid-template-columns: 1fr;
   }
