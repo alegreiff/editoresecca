@@ -2132,9 +2132,9 @@ a:visited {
   margin: 0 auto;
   padding: 1.5em 0 0 1em;
   /* background-image: url(images/channels4_banner.jpg); */
-  background-image: url(images/crimson-pattern.png);
+  background-image: url(images/crimson-751082e4.png);
   background-color: crimson;
-  border-bottom: 4px crimson solid;
+  border-bottom: 1em white solid;
 }
 
 .site-header .wrap {
